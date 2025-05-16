@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'Sonoma';
+    src: url('./assets/fonts/sonoma/BRSonoma-Regular-BF654c45266c042.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sonoma-bold';
+    src: url('./assets/fonts/sonoma/BRSonoma-Bold-BF654c4526823f5.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sonoma-medium';
+    src: url('./assets/fonts/sonoma/BRSonoma-Medium-BF654c45266edd1.otf') format('opentype');
+    
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sonoma-semibold';
+    src: url('./assets/fonts/sonoma/BRSonoma-Bold-BF654c4526823f5.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  html,body{
+    font-family: 'Sonoma';
+    padding: 0;
+    margin: 0;
+    /* background-color: chartreuse; */
+    min-height: 90vh;
+  }
+  .font-sonomaBold {
+    font-family: 'Sonoma-bold';
+  }
+  .font-sonomaSemiBold {
+    font-family: 'Sonoma-semibold';
+  }
+  .font-sonomaMedium {
+    font-family: 'Sonoma-medium';
+  }
