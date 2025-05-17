@@ -22,7 +22,7 @@ const Layout: React.FC = () => {
           </div>
         </div>
       </header>
-      <main className='m-0 p-0 bg-[#FAFBFF] h-[90vh] '>
+      <main className='m-0 p-0 bg-[#FAFBFF] h-[87vh] '>
         <Outlet />
       </main>
     </div>
