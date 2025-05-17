@@ -53,7 +53,7 @@ export default tseslint.config({
 })
 ``` -->
 
-# 📦 Proyecto [Nombre del Proyecto]
+# 📦 Proyecto [Rimac Chanllenge]
 
 Este proyecto es una aplicación web desarrollada con tecnologías modernas del ecosistema JavaScript y TypeScript, enfocada en el rendimiento, la escalabilidad y buenas prácticas de desarrollo.
 
@@ -92,15 +92,18 @@ A continuación se detallan las tecnologías y herramientas principales empleada
   Se escribieron pruebas unitarias para asegurar la calidad y confiabilidad del código, usando bibliotecas como `Jest` o `React Testing Library`.
 
 ## 📁 Estructura del Proyecto
+```txt
 src/
-├── components/
-├── features/
-├── hooks/
-├── services/
-├── store/
-├── styles/
-├── types/
-└── utils/
+├── components/       # Componentes reutilizables
+├── lib/              # Libreria de terceros
+├── hooks/            # Hooks personalizados
+├── services/         # Servicios y lógica de negocio
+├── store/            # Configuración de Redux Toolkit
+├── modules/          # modularizacion con clean architecture
+├── layout/           # Definicion del componente layout
+├── utils/            # Funciones utilitarias
+└── assets/           # Imagenes utilizadas en el proyecto
+
 El proyecto sigue una estructura modular y organizada por características, permitiendo una mejor escalabilidad y mantenimiento a largo plazo.
 
 
