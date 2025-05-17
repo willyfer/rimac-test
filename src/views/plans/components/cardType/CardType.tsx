@@ -19,9 +19,10 @@ const CardType = ({
       <div className='flex flex-col  gap-2 text-left'>
         <div className='flex justify-end'>
           {!selected ? (
-            <Circle />
+            <Circle data-testid='lucide-circle' />
           ) : (
             <CheckCircle2
+              data-testid='lucide-check-circle-2'
               fill='#389E0D'
               stroke='white'
               color='white'
@@ -30,7 +31,7 @@ const CardType = ({
           )}
         </div>
         <div className='flex gap-3'>
-          <img src={img} alt='' className='w-[32px] md:w-[48px]' />
+          <img src={img} alt='img_card_type' className='w-[32px] md:w-[48px]' />
           <div className='md:hidden block text-[20px] font-latoBold'>
             {title}
           </div>
