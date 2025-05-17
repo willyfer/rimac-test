@@ -39,8 +39,8 @@ const Plans = () => {
   }, [dispatch])
 
   useEffect(() => {
-    console.log('user.age ', user.age)
-    // if (user.age === 0) navigate('/')
+    //    console.log('user.age ', user.age)
+    if (user.age === 0) navigate('/')
   }, [])
 
   return (

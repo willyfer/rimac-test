@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useAppSelector } from '../../store/Store'
 import Container from './Container'
 import { useNavigate } from 'react-router-dom'
@@ -12,6 +13,10 @@ const Summary = () => {
     //console.log('handle bakc')
     navigate('/plans')
   }
+  useEffect(() => {
+    console.log('user.age ', user)
+    if (user.name === '') navigate('/')
+  }, [])
   return (
     <div>
       <Container plan={planSelect} handleBack={handleBack} user={user} />

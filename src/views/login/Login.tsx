@@ -6,6 +6,7 @@ import { setUser } from '../../store/slices/UserSlice'
 import { getUser } from '../../modules/user/application/getUser'
 import { setLoading } from '../../store/slices/PlanSlice'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Login = () => {
   const year = new Date().getFullYear()
@@ -21,6 +22,7 @@ const Login = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = methods
 
@@ -33,6 +35,9 @@ const Login = () => {
     // navigate('/plans')
   }
 
+  useEffect(() => {
+    reset()
+  }, [])
   return (
     <Container
       year={year}
