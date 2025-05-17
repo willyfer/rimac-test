@@ -13,7 +13,6 @@ export interface FormData {
   documentType: 'DNI' | 'CE'
 }
 export interface IloginProps {
-  year: number
   register: UseFormRegister<FormData>
   handleSubmit: UseFormHandleSubmit<FormData, FormData>
   onSubmit: (data: FormData) => void

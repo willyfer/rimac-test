@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
 import Container from './Container'
+import logo from '../../assets/common/Logo-bn.svg'
 import { type FormData } from './types'
 import { useAppDispatch, useAppSelector } from '../../store/Store'
 import { setUser } from '../../store/slices/UserSlice'
@@ -39,15 +40,27 @@ const Login = () => {
     reset()
   }, [])
   return (
-    <Container
-      year={year}
-      register={register}
-      handleSubmit={handleSubmit}
-      onSubmit={onSubmit}
-      methods={methods}
-      errors={errors}
-      loading={loading}
-    />
+    <>
+      <Container
+        register={register}
+        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
+        methods={methods}
+        errors={errors}
+        loading={loading}
+      />
+      {/* FOOTER */}
+      <div className='bg-[#03050F]  h-[106px]  w-full mx-auto  flex justify-center mt-18 md:mt-0  z-10'>
+        <div className='w-7xl  flex justify-between items-center'>
+          <div className='m-auto md:m-0'>
+            <img src={logo} alt='' />
+          </div>
+          <div className='hidden md:block font-sonoma text-white'>
+            © {year} RIMAC Seguros y Reaseguros.
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
