@@ -88,7 +88,7 @@ const Container = ({
                 render={({ field }) => (
                   <>
                     <Checkbox
-                      label='Acepto los términos y condiciones'
+                      label='Acepto la Política Comunicaciones Comerciales'
                       checked={field.value}
                       onChange={field.onChange}
                     />
