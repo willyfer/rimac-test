@@ -2,31 +2,57 @@
 
 
 @font-face {
-    font-family: 'Sonoma';
+    font-family: 'Sonoma', sans-serif;
     src: url('./assets/fonts/sonoma/BRSonoma-Regular-BF654c45266c042.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'Sonoma-bold';
+    font-family: 'Sonoma-bold', sans-serif;
     src: url('./assets/fonts/sonoma/BRSonoma-Bold-BF654c4526823f5.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
   }
   @font-face {
-    font-family: 'Sonoma-medium';
+    font-family: 'Sonoma-medium', sans-serif;
     src: url('./assets/fonts/sonoma/BRSonoma-Medium-BF654c45266edd1.otf') format('opentype');
     
     font-style: normal;
   }
   @font-face {
-    font-family: 'Sonoma-semibold';
+    font-family: 'Sonoma-semibold', sans-serif;
     src: url('./assets/fonts/sonoma/BRSonoma-Bold-BF654c4526823f5.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('./assets/fonts/lato/Lato-Regular.ttf') format('opentype');
+   
+    font-style: normal;
+  }
   
+  @font-face {
+    font-family: 'Lato-bold', sans-serif;
+    src: url('./assets/fonts/lato/Lato-Bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Lato-thin', sans-serif;
+    src: url('./assets/fonts/lato/Lato-Thin.ttf') format('opentype');
+    
+    font-style: normal;
+  }
+ 
+  @font-face {
+    font-family: 'Lato-light';
+    src: url('./assets/fonts/lato/Lato-Light.ttf') format('opentype');
+    
+    font-style: normal;
+  }
+ 
   html,body{
     font-family: 'Sonoma';
     padding: 0;
@@ -35,11 +61,23 @@
     min-height: 90vh;
   }
   .font-sonomaBold {
-    font-family: 'Sonoma-bold';
+    font-family: 'Sonoma-bold', sans-serif;
   }
   .font-sonomaSemiBold {
-    font-family: 'Sonoma-semibold';
+    font-family: 'Sonoma-semibold', sans-serif;
   }
   .font-sonomaMedium {
-    font-family: 'Sonoma-medium';
+    font-family: 'Sonoma-medium', sans-serif;
+  }
+  .font-lato {
+    font-family: 'Lato', sans-serif;
+  }
+  .font-latoBold {
+    font-family: 'Lato-bold', sans-serif;
+  }
+  .font-latoThin {
+    font-family: 'Lato-thin', sans-serif;
+  }
+  .font-latolight {
+    font-family: 'Lato-light', sans-serif;
   }

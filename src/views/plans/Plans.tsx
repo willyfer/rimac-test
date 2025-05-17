@@ -1,56 +1,59 @@
-import React from 'react'
-import line from '../../assets/common/line.svg'
-import { ChevronLeftCircle } from 'lucide-react'
-import CardPlan from './components/card/CardPlan'
-import imgSecurity from '../../assets/common/IcProtectionLight.svg'
-import imgAddUser from '../../assets/common/IcAddUserLight.svg'
+import { useEffect, useRef, useState } from 'react'
+import Container from './Container'
+import { useAppDispatch, useAppSelector } from '../../store/Store'
+import { getAllPlans } from '../../modules/plan/application/getAllPlans'
+import { useNavigate } from 'react-router-dom'
+import { setPlans, setPlanSelect } from '../../store/slices/PlanSlice'
+import type { Plan } from '../../modules/plan/domain/models/Plan'
+
 const Plans = () => {
+  const sectionRef = useRef<any>(null)
+  const navigate = useNavigate()
+
+  const [selectType, setselectType] = useState<string>('')
+  const dispatch = useAppDispatch()
+
+  const { plans, loading, planSelect } = useAppSelector(state => state.plan)
+  const { user } = useAppSelector(state => state.user)
+
+  const handleSetPlanSelecet = async (plan: Plan) => {
+    dispatch(setPlanSelect(plan))
+  }
+
+  const scrollToSection = (title: string) => {
+    setselectType(title)
+    const aux = plans.filter(el => el.age >= user.age)
+    dispatch(setPlans(aux))
+    setTimeout(() => {
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }, 400)
+  }
+  const handleBack = () => {
+    //console.log('handle bakc')
+    navigate('/')
+  }
+  useEffect(() => {
+    //handleGetPlans()
+    dispatch(getAllPlans())
+  }, [dispatch])
+
+  useEffect(() => {
+    console.log('user.age ', user.age)
+    if (user.age === 0) navigate('/')
+  }, [])
+
   return (
     <div>
-      {/* STEPS */}
-      <div className='w-full bg-[#EDEFFC] h-[56px] flex items-center justify-center'>
-        <div className='flex gap-4'>
-          <div className='w-[24px] h-[24px] rounded-full bg-[#4F4FFF] text-white flex justify-center items-center text-sm'>
-            1
-          </div>
-          <div className='text-[#141938]'> Planes y coberturas</div>
-          <img src={line} alt='img-line' className='mr-5' />
-        </div>
-        <div className='flex gap-4'>
-          <div className='w-[24px] h-[24px] rounded-full border-1 border-[#4F4FFF] text-[#7981B2] flex justify-center items-center text-sm'>
-            2
-          </div>
-          <div className='text-[#7981B2]'> Resumen</div>
-        </div>
-      </div>
-      {/* CONTENT */}
-      <div className='max-w-7xl  m-auto p-5'>
-        <div>
-          <button className='cursor-pointer text-[#4F4FFF] flex gap-3'>
-            <ChevronLeftCircle /> Volver
-          </button>
-        </div>
-        <div className='text-[40px] w-[545px] m-auto font-semibold text-center my-10'>
-          Rocío ¿Para quién deseas cotizar?
-        </div>
-        <div className='text-[16px] w-[545px] m-auto font-semibold text-center my-10'>
-          Selecciona la opción que se ajuste más a tus necesidades.
-        </div>
-        <div className='flex gap-5 m-auto w-fit '>
-          <CardPlan
-            title='Para mí'
-            selected={true}
-            description='Cotiza tu seguro de salud y agrega familiares si así lo deseas.'
-            img={imgSecurity}
-          />
-          <CardPlan
-            selected={false}
-            title='Para alguien más'
-            description='Realiza una cotización para uno de tus familiares o cualquier persona.'
-            img={imgAddUser}
-          />
-        </div>
-      </div>
+      <Container
+        user={user}
+        plans={plans}
+        selectType={selectType}
+        setselectType={setselectType}
+        scrollToSection={scrollToSection}
+        sectionRef={sectionRef}
+        handleBack={handleBack}
+        handleSetPlanSelecet={handleSetPlanSelecet}
+      />
     </div>
   )
 }

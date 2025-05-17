@@ -12,10 +12,10 @@ const Layout: React.FC = () => {
             <img src={logo} alt='Rimac Logo' className='w-[70px] h-[45px]' />
           </div>
           <div className='flex justify-center  items-center gap-5'>
-            <div className='hidden md:block text-[12px]'>
+            <div className='hidden md:block font-sonomaBold font-medium text-[12px]'>
               ¡Compra por este medio!
             </div>
-            <div className='flex gap-1 text-[16px] md:text-[18px]  font-sonomaMedium'>
+            <div className='flex gap-3 justify-center items-center text-[16px] md:text-[18px]  font-sonomaMedium'>
               <Phone fill='black' className='' width={15} color='black' /> (01)
               411 6001
             </div>
