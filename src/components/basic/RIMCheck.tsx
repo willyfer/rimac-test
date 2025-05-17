@@ -27,7 +27,9 @@ export default function Checkbox ({
         `}
       >
         {/* El icono siempre está, pero oculto por default */}
-        <Check className=' w-4 h-4 text-white peer-checked:block' />
+        {checked && (
+          <Check className=' w-4 h-4 text-white   peer-checked:block' />
+        )}
       </div>
       <span className='ml-2 select-none'>{label}</span>
     </label>
