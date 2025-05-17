@@ -54,3 +54,4 @@ export const plans = {
 }
 
 export const RECOMMENDED = 'Plan en Casa y Clínica'
+export const TYPE_DESCOUNT = 'Para alguien más'

@@ -60,6 +60,9 @@
     /* background-color: chartreuse; */
     min-height: 90vh;
   }
+  .font-sonoma {
+    font-family: 'Sonoma', sans-serif;
+  }
   .font-sonomaBold {
     font-family: 'Sonoma-bold', sans-serif;
   }

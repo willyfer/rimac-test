@@ -24,4 +24,5 @@ export interface IPropsCardType {
 export type IpropsCardPlan = {
   plan: Plan
   handleSelect: (plan: Plan) => void
+  selectType: string
 }

@@ -33,7 +33,7 @@ const Container = ({
           <img src={line} alt='img-line' className='mr-5' />
         </div>
         <div className='flex gap-4'>
-          <div className='w-[24px] h-[24px] rounded-full border-1 border-[#4F4FFF] text-[#7981B2] flex justify-center items-center text-sm'>
+          <div className='w-[24px] h-[24px] rounded-full border-1 border-[#7981B2] text-[#7981B2] flex justify-center items-center text-sm'>
             2
           </div>
           <div className='text-[#7981B2]'> Resumen</div>
@@ -104,6 +104,7 @@ const Container = ({
               <CardPlan
                 key={index}
                 plan={el}
+                selectType={selectType}
                 handleSelect={handleSetPlanSelecet}
               />
             ))}

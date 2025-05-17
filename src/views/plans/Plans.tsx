@@ -18,6 +18,7 @@ const Plans = () => {
 
   const handleSetPlanSelecet = async (plan: Plan) => {
     dispatch(setPlanSelect(plan))
+    navigate('/resume')
   }
 
   const scrollToSection = (title: string) => {
