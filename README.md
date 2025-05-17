@@ -53,7 +53,7 @@ export default tseslint.config({
 })
 ``` -->
 
-# 📦 Proyecto [Rimac Chanllenge]
+# 📦 Proyecto [Rimac Challenge]
 
 Este proyecto es una aplicación web desarrollada con tecnologías modernas del ecosistema JavaScript y TypeScript, enfocada en el rendimiento, la escalabilidad y buenas prácticas de desarrollo.
 

@@ -21,6 +21,8 @@ const HorizontalSlider = ({ children }: props) => {
     <div className='relative w-[80%] md:w-[926px] m-auto'>
       {/* Botón izquierdo */}
       <button
+        type='button'
+        data-testid='btn-left'
         onClick={() => scroll('left')}
         className='absolute hidden md:block -left-10 top-1/2 cursor-pointer transform -translate-y-1/2 bg-black opacity-30 text-white rounded-full p-2 hover:opacity-80 z-10'
       >
@@ -37,6 +39,8 @@ const HorizontalSlider = ({ children }: props) => {
 
       {/* Botón derecho */}
       <button
+        type='button'
+        data-testid='btn-right'
         onClick={() => scroll('right')}
         className='hidden md:block absolute cursor-pointer -right-10 top-1/2 transform -translate-y-1/2 bg-black opacity-30 text-white rounded-full p-2 hover:opacity-80 z-10'
       >

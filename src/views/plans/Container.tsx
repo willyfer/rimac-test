@@ -96,7 +96,7 @@ const Container = ({
       {/*  ******* SLIDER  *********/}
 
       {selectType !== '' && (
-        <div id='sliderPlans' ref={sectionRef}>
+        <div id='sliderPlans' ref={sectionRef} data-testid='slider-container'>
           <HorizontalSlider>
             {plans.map((el, index) => (
               <CardPlan
