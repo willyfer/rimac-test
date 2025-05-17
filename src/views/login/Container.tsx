@@ -1,4 +1,4 @@
-import img from '../../assets/common/img-login.png'
+import img from '../../assets/common/img-login.webp'
 import logo from '../../assets/common/Logo-bn.svg'
 import InputPhone from './components/InputPhone'
 import InputDocument from './components/InputDocument'
