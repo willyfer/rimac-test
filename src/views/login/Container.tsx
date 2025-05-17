@@ -16,7 +16,7 @@ const Container = ({
 }: IloginProps) => {
   return (
     <FormProvider {...methods}>
-      <div className='relative flex flex-col max-w-screen w-[100vw] font-sonoma min-h-[99vh]'>
+      <div className='relative flex flex-col max-w-screen w-[100vw] font-sonoma min-h-[90vh]'>
         <div className=' bg-violet-700 absolute w-[132px] h-[156px] md:w-[332px] md:h-[356px] blur-[80px] md:blur-[140px]  -left-[100px] md:-left-[214px] bottom-[40px] md:top-[272px] rounded-full' />
         <div className=' bg-[#00F4E2] absolute w-[132px] h-[156px] md:w-[232px] md:h-[256px] blur-[70px] md:blur-[100px] -right-[0px] md:-right-[70px] -top-[100px] md:top-[174px] rounded-full' />
         <div className='grid md:grid-cols-2 sm:grid-cols-1 w-full h-min-[640px] max-w-6xl  mx-auto my-2 md:my-10 z-10'>
@@ -145,7 +145,7 @@ const Container = ({
         </div>
 
         {/* FOOTER */}
-        <div className='bg-[#03050F] absolute bottom-0 h-[106px]  w-full mx-auto  flex justify-center mt-18 md:mt-0  z-10'>
+        <div className='bg-[#03050F]  h-[106px]  w-full mx-auto  flex justify-center mt-18 md:mt-0  z-10'>
           <div className='w-7xl  flex justify-between items-center'>
             <div className='m-auto md:m-0'>
               <img src={logo} alt='' />
