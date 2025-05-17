@@ -12,7 +12,12 @@ export default function Checkbox ({
 }) {
   return (
     <label className='inline-flex items-center cursor-pointer'>
-      <input type='checkbox' onChange={onChange} className='peer sr-only' />
+      <input
+        type='checkbox'
+        checked={checked}
+        onChange={onChange}
+        className='peer sr-only'
+      />
       <div
         className={`
           w-5 h-5 border-2 border-gray-400 rounded-sm

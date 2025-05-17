@@ -1,5 +1,3 @@
-import React from 'react'
-
 import styles from './styles.module.sass'
 import home from '../../../../assets/common/plans/IcHomeLight.svg'
 import hp from '../../../../assets/common/plans/IcHospitalLight.svg'

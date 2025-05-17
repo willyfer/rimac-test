@@ -9,12 +9,10 @@ import imgAddUser from '../../assets/common/IcAddUserLight.svg'
 
 import line from '../../assets/common/line.svg'
 import type { IcontainerProps } from './types'
-import { useRef } from 'react'
 
 const Container = ({
   user,
   selectType,
-  setselectType,
   plans,
   scrollToSection,
   sectionRef,

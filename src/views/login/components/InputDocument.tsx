@@ -5,9 +5,9 @@ import { useFormContext } from 'react-hook-form'
 const InputDocument = () => {
   const {
     register,
-    watch,
+
     getValues,
-    formState: { errors, touchedFields }
+    formState: { errors }
   } = useFormContext()
   const documentType = getValues('documentType')
   return (

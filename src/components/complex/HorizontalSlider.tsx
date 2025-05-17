@@ -1,10 +1,5 @@
-import {
-  ChevronLeft,
-  ChevronLeftCircle,
-  ChevronRight,
-  ChevronRightCircle
-} from 'lucide-react'
-import React, { useRef, type FC, type ReactNode } from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useRef, type ReactNode } from 'react'
 
 export type props = {
   children: ReactNode

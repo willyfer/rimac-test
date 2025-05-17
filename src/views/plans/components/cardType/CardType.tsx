@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './styles.module.sass'
 import { CheckCircle2, Circle } from 'lucide-react'
 import type { IPropsCardType } from '../../types'

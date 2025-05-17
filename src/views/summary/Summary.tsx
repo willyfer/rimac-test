@@ -1,4 +1,3 @@
-import React from 'react'
 import { useAppSelector } from '../../store/Store'
 import Container from './Container'
 import { useNavigate } from 'react-router-dom'

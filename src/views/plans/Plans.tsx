@@ -13,7 +13,7 @@ const Plans = () => {
   const [selectType, setselectType] = useState<string>('')
   const dispatch = useAppDispatch()
 
-  const { plans, loading, planSelect } = useAppSelector(state => state.plan)
+  const { plans } = useAppSelector(state => state.plan)
   const { user } = useAppSelector(state => state.user)
 
   const handleSetPlanSelecet = async (plan: Plan) => {

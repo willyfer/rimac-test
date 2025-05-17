@@ -1,5 +1,3 @@
-import React from 'react'
-
 import line from '../../assets/common/line.svg'
 import { ChevronLeftCircle } from 'lucide-react'
 import type { IcontainerProps } from './types'
