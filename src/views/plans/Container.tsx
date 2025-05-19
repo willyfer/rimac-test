@@ -20,7 +20,7 @@ const Container = ({
   handleSetPlanSelecet
 }: IcontainerProps) => {
   return (
-    <div className='font-lato'>
+    <div className='font-lato h-full'>
       {/* **********  STEPS ********* */}
       <div className='hidden md:flex w-full bg-[#EDEFFC] h-[56px]  items-center justify-center'>
         <div className='flex gap-4'>

@@ -50,12 +50,13 @@ const Login = () => {
         loading={loading}
       />
       {/* FOOTER */}
-      <div className='bg-[#03050F]  h-[106px]  w-full mx-auto  flex justify-center mt-18 md:mt-0  z-10'>
-        <div className='w-7xl  flex justify-between items-center'>
-          <div className='m-auto md:m-0'>
+      <div className='bg-[#03050F]  h-min-[106px]  md:h-[106px] w-full mx-auto   flex justify-center  md:mt-0 z-10'>
+        <div className='w-7xl  flex flex-col md:flex-row justify-between items-center'>
+          <div className='m-auto py-4 md:m-0'>
             <img src={logo} alt='' />
           </div>
-          <div className='hidden md:block font-sonoma text-white'>
+          <div className='md:hidden border-b-1 border-gray-50 w-[90%] mt-5'></div>
+          <div className=' md:block font-sonoma text-white p-4'>
             © {year} RIMAC Seguros y Reaseguros.
           </div>
         </div>

@@ -22,7 +22,7 @@ const Layout: React.FC = () => {
           </div>
         </div>
       </header>
-      <main className='m-0 p-0 bg-[#FAFBFF] h-min-fit  h-[83vh]'>
+      <main className='m-0 p-0 bg-[#FAFBFF] h-min-screen h-[83vh] max-h-full'>
         <Outlet />
       </main>
     </div>
